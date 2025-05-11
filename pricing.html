@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Bảng Giá - PetHaven</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img alt="PetHaven Logo" height="100" src="img/logo.png" /></a>
+            <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Dịch vụ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pets.html">Thú cưng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pricing.html">Bảng giá</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Đăng nhập</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login1.html">Đăng kí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-target="#cartModal" data-bs-toggle="modal" href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge bg-danger rounded-pill cart-badge">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- PAGE HEADER -->
+    <!-- TABS CONTAINER -->
+    <section id="pricing" class="py-5">
+    <div class="container py-5 mt-5 pt-5">
+        <div class="container">
+            <ul class="nav nav-pills mb-4 justify-content-center" id="pricingTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button aria-controls="grooming" aria-selected="true" class="nav-link active mx-2"
+                        data-bs-target="#grooming" data-bs-toggle="pill" id="grooming-tab" role="tab" type="button">
+                        <i class="fas fa-cut me-2"></i>Grooming &amp; Spa
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button aria-controls="medical" aria-selected="false" class="nav-link mx-2"
+                        data-bs-target="#medical" data-bs-toggle="pill" id="medical-tab" role="tab" type="button">
+                        <i class="fas fa-medkit me-2"></i>Dịch vụ y tế
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button aria-controls="hotel" aria-selected="false" class="nav-link mx-2" data-bs-target="#hotel"
+                        data-bs-toggle="pill" id="hotel-tab" role="tab" type="button">
+                        <i class="fas fa-home me-2"></i>Pet Hotel
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button aria-controls="training" aria-selected="false" class="nav-link mx-2"
+                        data-bs-target="#training" data-bs-toggle="pill" id="training-tab" role="tab" type="button">
+                        <i class="fas fa-graduation-cap me-2"></i>Huấn luyện
+                    </button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pricingTabsContent">
+           
+                <!-- GROOMING SERVICES -->
+                <div aria-labelledby="grooming-tab" class="tab-pane fade show active" id="grooming" role="tabpanel">
+                    <div class="row mb-5">
+                        <div class="col-md-4 mb-4">
+                            <div class="card panel h-100">
+                                <div class="card-header text-center bg-primary text-white">
+                                    <h4>Gói Cơ bản</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="text-center">299.000đ</h3>
+                                    <ul class="list-unstyled text-center">
+                                        <li>Tắm cơ bản</li>
+                                        <li>Cắt móng</li>
+                                        <li>Vệ sinh tai</li>
+                                        <li>Thơm tho 7 ngày</li>
+                                    </ul>
+                                    <p class="text-center text-muted mt-3">
+                                        Phù hợp cho thú cưng dưới 10kg
+                                    </p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <button class="btn btn-primary" data-bs-target="#serviceModal"
+                                        data-bs-toggle="modal" data-service="training-basic">
+                                        Đặt lịch
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card panel h-100">
+                                <div class="card-header text-center bg-success text-white">
+                                    <h4>Gói Tiêu chuẩn</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="text-center">499.000đ</h3>
+                                    <ul class="list-unstyled text-center">
+                                        <li>Tắm + Sấy khô</li>
+                                        <li>Cắt tỉa lông cơ bản</li>
+                                        <li>Vệ sinh tai, mắt</li>
+                                        <li>Cắt móng</li>
+                                        <li>Tinh dầu dưỡng lông</li>
+                                    </ul>
+                                    <p class="text-center text-muted mt-3">
+                                        Phù hợp cho mọi loại thú cưng
+                                    </p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <button class="btn btn-primary" data-bs-target="#serviceModal"
+                                        data-bs-toggle="modal" data-service="grooming">
+                                        Đặt lịch
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card panel h-100">
+                                <div class="card-header text-center bg-danger text-white">
+                                    <h4>Gói VIP</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="text-center">799.000đ</h3>
+                                    <ul class="list-unstyled text-center">
+                                        <li>Tắm + Sấy khô</li>
+                                        <li>Cắt tỉa lông tạo kiểu</li>
+                                        <li>Vệ sinh tai, mắt</li>
+                                        <li>Cắt móng</li>
+                                        <li>Massage thư giãn</li>
+                                        <li>Tinh dầu dưỡng lông cao cấp</li>
+                                        <li>Sản phẩm quà tặng</li>
+                                    </ul>
+                                    <p class="text-center text-muted mt-3">
+                                        Trải nghiệm đặc biệt cho thú cưng
+                                    </p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <button class="btn btn-primary" data-bs-target="#serviceModal"
+                                        data-bs-toggle="modal" data-service="grooming">
+                                        Đặt lịch
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-detail bg-light p-4 rounded-3 mb-5">
+                        <h3>Dịch vụ Grooming bổ sung</h3>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Dịch vụ</th>
+                                        <th scope="col">Mô tả</th>
+                                        <th scope="col">Giá</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Cạo lông vệ sinh</td>
+                                        <td>Cạo lông vùng bụng, chân và các vùng vệ sinh</td>
+                                        <td>150.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tạo kiểu lông đặc biệt</td>
+                                        <td>
+                                            Tạo kiểu lông theo yêu cầu, phù hợp với từng giống chó
+                                        </td>
+                                        <td>350.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nhuộm lông</td>
+                                        <td>Nhuộm lông an toàn bằng màu tự nhiên</td>
+                                        <td>500.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spa bùn khoáng</td>
+                                        <td>Đắp mặt nạ bùn khoáng giúp làm sạch da và lông</td>
+                                        <td>300.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Massage thảo dược</td>
+                                        <td>Massage thư giãn với tinh dầu thảo dược</td>
+                                        <td>250.000đ</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- MEDICAL SERVICES -->
+                <div aria-labelledby="medical-tab" class="tab-pane fade" id="medical" role="tabpanel">
+                    <div class="pricing-detail bg-light p-4 rounded-3 mb-5">
+                        <h3>Dịch vụ khám và chăm sóc sức khỏe</h3>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Dịch vụ</th>
+                                        <th scope="col">Mô tả</th>
+                                        <th scope="col">Giá</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Khám sức khỏe tổng quát</td>
+                                        <td>Kiểm tra toàn diện sức khỏe của thú cưng</td>
+                                        <td>300.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tiêm phòng</td>
+                                        <td>Tiêm phòng các bệnh thông thường</td>
+                                        <td>200.000đ - 400.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tẩy giun</td>
+                                        <td>Thuốc tẩy giun định kỳ</td>
+                                        <td>100.000đ - 250.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Siêu âm</td>
+                                        <td>Kiểm tra nội tạng bằng siêu âm</td>
+                                        <td>500.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Xét nghiệm máu</td>
+                                        <td>Xét nghiệm máu cơ bản</td>
+                                        <td>450.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cạo vôi răng</td>
+                                        <td>Vệ sinh và cạo vôi răng</td>
+                                        <td>600.000đ - 900.000đ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Triệt sản</td>
+                                        <td>Phẫu thuật triệt sản</td>
+                                        <td>1.200.000đ - 2.500.000đ</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-4 mb-4">
+                            <div class="card panel h-100">
+                                <div class="card-header text-center bg-info text-white">
+                                    <h4>Gói Chăm sóc Cơ bản</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="text-center">800.000đ</h3>
+                                    <ul class="list-unstyled text-center">
+                                        <li>Khám tổng quát</li>
+                                        <li>Tiêm phòng cơ bản</li>
+                                        <li>Thuốc tẩy giun</li>
+                                        <li>Tư vấn dinh dưỡng</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <button class="btn btn-info text-white" data-bs-target="#serviceModal"
+                                        data-bs-toggle="modal" data-service="medical-basic">
+                                        Đặt lịch
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card panel h-100">
+                                <div class="card-header text-center bg-warning text-dark">
+                                    <h4>Gói Chăm sóc Nâng cao</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="text-center">1.500.000đ</h3>
+                                    <ul class="list-unstyled text-center">
+                                        <li>Khám tổng quát</li>
+                                        <li>Tiêm phòng đầy đủ</li>
+                                        <li>Thuốc tẩy giun</li>
+                                        <li>Xét nghiệm máu cơ bản</li>
+                                        <li>Kiểm tra ký sinh trùng</li>
+                                        <li>Tư vấn dinh dưỡng chuyên sâu</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <button class="btn btn-warning" data-bs-target="#serviceModal"
+                                        data-bs-toggle="modal" data-service="medical-standard">
+                                        Đặt lịch
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card panel h-100">
+                                <div class="card-header text-center bg-secondary text-white">
+                                    <h4>Gói Theo dõi Sức khỏe</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="text-center">5.000.000đ</h3>
+                                    <p class="text-center text-muted">(Hợp đồng 1 năm)</p>
+                                    <ul class="list-unstyled text-center">
+                                        <li>4 lần khám tổng quát/năm</li>
+                                        <li>Tiêm phòng đầy đủ</li>
+                                        <li>Tẩy giun định kỳ</li>
+                                        <li>Xét nghiệm máu 2 lần/năm</li>
+                                        <li>Siêu âm 1 lần/năm</li>
+                                        <li>Tư vấn sức khỏe thường xuyên</li>
+                                        <li>Giảm 10% dịch vụ y tế khác</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <button class="btn btn-secondary" data-bs-target="#serviceModal"
+                                        data-bs-toggle="modal" data-service="medical-premium">
+                                        Đặt lịch
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PET HOTEL -->
+                <div aria-labelledby="hotel-tab" class="tab-pane fade" id="hotel" role="tabpanel">
+                    <div class="row mb-5">
+                        <div class="col-md-4 mb-4">
+                            <div class="card panel h-100">
+                                <div class="card-header text-center bg-primary text-white">
+                                    <h4>Phòng Tiêu chuẩn</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="text-center">250.000đ/ngày</h3>
+                                    <ul class="list-unstyled text-center">
+                                        <li>Phòng riêng thoáng mát</li>
+                                        <li>Cho ăn 2 lần/ngày</li>
+                                        <li>Đi dạo 2 lần/ngày</li>
+                                        <li>Vệ sinh chuồng hàng ngày</li>
+                                    </ul>
+                                    <p class="text-center text-muted mt-3">
+                                        Phù hợp với mèo và chó dưới 15kg
+                                    </p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <button class="btn btn-primary" data-bs-target="#serviceModal"
+                                        data-bs-toggle="modal" data-service="hotel-standard">
+                                        Đặt lịch
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card panel h-100">
+                                <div class="card-header text-center bg-success text-white">
+                                    <h4>Phòng Deluxe</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="text-center">350.000đ/ngày</h3>
+                                    <ul class="list-unstyled text-center">
+                                        <li>Phòng rộng rãi, có đệm</li>
+                                        <li>Cho ăn 3 lần/ngày</li>
+                                        <li>Đi dạo 3 lần/ngày</li>
+                                        <li>Chơi đùa với nhân viên</li>
+                                        <li>Vệ sinh chuồng 2 lần/ngày</li>
+                                        <li>Báo cáo hàng ngày</li>
+                                    </ul>
+                                    <p class="text-center text-muted mt-3">
+                                        Phù hợp với mọi loại thú cưng
+                                    </p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <button class="btn btn-success" data-bs-target="#serviceModal"
+                                        data-bs-toggle="modal" data-service="hotel-deluxe">
+                                        Đặt lịch
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card panel h-100">
+                                <div class="card-header text-center bg-danger text-white">
+                                    <h4>Phòng VIP</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="text-center">500.000đ/ngày</h3>
+                                    <ul class="list-unstyled text-center">
+                                        <li>Phòng cao cấp, máy lạnh</li>
+                                        <li>Thức ăn cao cấp</li>
+                                        <li>Đi dạo 4 lần/ngày</li>
+                                        <li>Massage thư giãn mỗi ngày</li>
+                                        <li>Chăm sóc toàn diện</li>
+                                        <li>Video call với chủ mỗi ngày</li>
+                                        <li>Vệ sinh chuồng 3 lần/ngày</li>
+                                    </ul>
+                                    <p class="text-center text-muted mt-3">
+                                        Trải nghiệm nghỉ dưỡng cao cấp
+                                    </p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <button class="btn btn-danger" data-bs-target="#serviceModal" data-bs-toggle="modal"
+                                        data-service="hotel-vip">
+                                        Đặt lịch
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-detail bg-light p-4 rounded-3 mb-5">
+                        <h3>Dịch vụ bổ sung Pet Hotel</h3>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Dịch vụ</th>
+                                        <th scope="col">Mô tả</th>
+                                        <th scope="col">Giá</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tắm và vệ sinh</td>
+                                        <td>
+                                            Tắm và vệ sinh cho thú cưng trong thời gian lưu trú
+                                        </td>
+                                        <td>150.000đ/lần</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chăm sóc y tế</td>
+                                        <td>Dành cho thú cưng cần chăm sóc y tế đặc biệt</td>
+                                        <td>200.000đ/ngày</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chụp ảnh cập nhật</td>
+                                        <td>Gửi ảnh cập nhật tình hình thú cưng cho chủ nhân</td>
+                                        <td>50.000đ/ngày</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Đưa đón tận nhà</td>
+                                        <td>Dịch vụ đưa đón thú cưng tận nhà</td>
+                                        <td>100.000đ - 200.000đ</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- TRAINING SERVICES -->
+                <div aria-labelledby="training-tab" class="tab-pane fade" id="training" role="tabpanel">
+                    <div class="row mb-5">
+                        <div class="col-md-4 mb-4">
+                            <div class="card panel h-100">
+                                <div class="card-header text-center bg-primary text-white">
+                                    <h4>Khóa Huấn luyện Cơ bản</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="text-center">3.500.000đ</h3>
+                                    <p class="text-center text-muted">(10 buổi, 1 buổi/tuần)</p>
+                                    <ul class="list-unstyled text-center">
+                                        <li>Dạy ngồi, nằm, đứng</li>
+                                        <li>Dạy đi theo chủ</li>
+                                        <li>Dạy không sủa vô cớ</li>
+                                        <li>Dạy vệ sinh đúng chỗ</li>
+                                        <li>Huấn luyện viên chuyên nghiệp</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <button class="btn btn-primary" data-bs-target="#serviceModal"
+                                        data-bs-toggle="modal" data-service="training-basic">
+                                        Đăng ký
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card panel h-100">
+                                <div class="card-header text-center bg-success text-white">
+                                    <h4>Khóa Huấn luyện Nâng cao</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="text-center">6.500.000đ</h3>
+                                    <p class="text-center text-muted">(20 buổi, 2 buổi/tuần)</p>
+                                    <ul class="list-unstyled text-center">
+                                        <li>Tất cả kỹ năng cơ bản</li>
+                                        <li>Dạy biểu diễn các trò đơn giản</li>
+                                        <li>Kiểm soát hành vi hung hăng</li>
+                                        <li>Huấn luyện đi dây</li>
+                                        <li>Tập phục tùng mệnh lệnh</li>
+                                        <li>Huấn luyện viên cấp cao</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <button class="btn btn-success" data-bs-target="#serviceModal"
+                                        data-bs-toggle="modal" data-service="training-advanced">
+                                        Đăng ký
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card panel h-100">
+                                <div class="card-header text-center bg-danger text-white">
+                                    <h4>Khóa Huấn luyện Chuyên sâu</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="text-center">12.000.000đ</h3>
+                                    <p class="text-center text-muted">
+                                        (30 buổi + hỗ trợ 3 tháng)
+                                    </p>
+                                    <ul class="list-unstyled text-center">
+                                        <li>Tất cả kỹ năng nâng cao</li>
+                                        <li>Huấn luyện phòng vệ và bảo vệ</li>
+                                        <li>Huấn luyện tuân thủ lệnh từ xa</li>
+                                        <li>Thực hành ngoài trời</li>
+                                        <li>Theo dõi tiến độ từng tuần</li>
+                                        <li>Hỗ trợ chăm sóc hành vi tại nhà</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <button class="btn btn-danger" data-bs-target="#serviceModal" data-bs-toggle="modal"
+                                        data-service="training-intensive">
+                                        Đăng ký
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-detail bg-light p-4 rounded-3 mb-5">
+                        <h3>Dịch vụ hỗ trợ huấn luyện bổ sung</h3>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Dịch vụ</th>
+                                        <th scope="col">Mô tả</th>
+                                        <th scope="col">Giá</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Buổi huấn luyện riêng</td>
+                                        <td>Huấn luyện cá nhân với chuyên gia</td>
+                                        <td>500.000đ/buổi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Đánh giá hành vi</td>
+                                        <td>Đánh giá và tư vấn điều chỉnh hành vi thú cưng</td>
+                                        <td>300.000đ/lần</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Huấn luyện tại nhà</td>
+                                        <td>Chuyên gia đến tận nhà để huấn luyện</td>
+                                        <td>700.000đ/buổi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gửi huấn luyện dài hạn</td>
+                                        <td>Ở lại trung tâm huấn luyện trong 2 tuần</td>
+                                        <td>10.000.000đ/trọn gói</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                   
+
+                    <!-- Bootstrap JS Bundle with Popper -->
+                    <script
+                        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+                    <!-- jQuery -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                    <!-- Custom JS -->
+                    <script src="script.js"></script>
+                </div>
+            </div>
+             <!-- FORM MODAL ĐĂNG KÝ DỊCH VỤ -->
+            <div aria-hidden="true" aria-labelledby="serviceModalLabel" class="modal fade" id="serviceModal"
+                tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form id="serviceForm">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="serviceModalLabel">
+                                    Đăng ký dịch vụ
+                                </h5>
+                                <button aria-label="Đóng" class="btn-close" data-bs-dismiss="modal"
+                                    type="button"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label class="form-label" for="name">Họ và tên</label>
+                                    <input class="form-control" id="name" required="" type="text" />
+                                    <div class="invalid-feedback">Vui lòng nhập họ tên</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="phone">Số điện thoại</label>
+                                    <input class="form-control" id="phone" pattern="0[0-9]{9}" required="" type="tel" />
+                                    <div class="invalid-feedback">
+                                        Vui lòng nhập số điện thoại hợp lệ
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="email">Email</label>
+                                    <input class="form-control" id="email" required="" type="email" />
+                                    <div class="invalid-feedback">Email không hợp lệ</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Dịch vụ muốn đăng ký</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" id="service1" type="checkbox"
+                                            value="Grooming &amp; Spa" />
+                                        <label class="form-check-label" for="service1">Grooming &amp; Spa</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" id="service2" type="checkbox"
+                                            value="Dịch vụ y tế" />
+                                        <label class="form-check-label" for="service2">Dịch vụ y tế</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" id="service3" type="checkbox"
+                                            value="Pet Hotel" />
+                                        <label class="form-check-label" for="service3">Pet Hotel</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" id="service4" type="checkbox"
+                                            value="Huấn luyện" />
+                                        <label class="form-check-label" for="service4">Huấn luyện</label>
+                                    </div>
+                                    <div class="invalid-feedback d-block" id="service-error" style="display: none">
+                                        Vui lòng chọn ít nhất một dịch vụ
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="message">Yêu cầu khác</label>
+                                    <textarea class="form-control" id="message" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">
+                                    Đóng
+                                </button>
+                                <button class="btn btn-primary" type="submit">Gửi</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+             <!-- FOOTER -->
+            <footer class="bg-dark text-white pt-5 pb-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <h5>PetHaven</h5>
+                            <p>
+                                Cửa hàng thú cưng hàng đầu Việt Nam, chuyên cung cấp các sản
+                                phẩm và dịch vụ chăm sóc thú cưng chất lượng cao.
+                            </p>
+                            <p>© 2024 PetHaven. Đã đăng ký bản quyền.</p>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <h5>Liên kết</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="text-white" href="#">Chính sách bảo mật</a></li>
+                                <li><a class="text-white" href="#">Điều khoản sử dụng</a></li>
+                                <li>
+                                    <a class="text-white" href="#">Chính sách giao hàng</a>
+                                </li>
+                                <li><a class="text-white" href="#">Chính sách đổi trả</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <h5>Theo dõi chúng tôi</h5>
+                            <div class="social-links">
+                                <a class="text-white me-2" href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+                                <a class="text-white me-2" href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                                <a class="text-white me-2" href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                                <a class="text-white me-2" href="#"><i class="fab fa-youtube fa-lg"></i></a>
+                            </div>
+                            <div class="mt-3">
+                                <p><i class="fas fa-envelope me-2"></i> info@pethaven.com</p>
+                                <p><i class="fas fa-phone me-2"></i> 0123 456 789</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+</body>
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Custom JS -->
+<script src="js/scripts.js"></script>
+</html>

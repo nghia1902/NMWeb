@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dịch vụ - PetHaven</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- MENU -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="PetHaven Logo" height="100"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">Dịch vụ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pets.html">Thú cưng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Bảng giá</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Đăng nhập</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login1.html">Đăng kí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge bg-danger rounded-pill cart-badge">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BANNER -->
+    <section id="banner" class="position-relative">
+        <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/api/placeholder/1200/500" class="d-block w-100" alt="Dịch vụ PetHaven">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES OVERVIEW -->
+    <section class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Dịch vụ của PetHaven</h1>
+            
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <h3>Chăm sóc sức khỏe thú cưng</h3>
+                    <p>Tại PetHaven, chúng tôi hiểu rằng sức khỏe của thú cưng là điều quan trọng nhất. Với đội ngũ bác sĩ thú y giàu kinh nghiệm và trang thiết bị hiện đại, chúng tôi cung cấp các dịch vụ chăm sóc sức khỏe toàn diện:</p>
+                    <ul>
+                        <li>Khám sức khỏe định kỳ</li>
+                        <li>Tiêm phòng vắc-xin</li>
+                        <li>Phòng ngừa và điều trị ký sinh trùng</li>
+                        <li>Chăm sóc nha khoa</li>
+                        <li>Tư vấn dinh dưỡng</li>
+                        <li>Điều trị bệnh</li>
+                    </ul>
+                    
+                </div>
+                <div class="col-md-6">
+                    <img src="img/takecare.jpg" alt="Chăm sóc sức khỏe" class="img-fluid rounded shadow">
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-md-6 order-md-2">
+                    <h3>Grooming & Spa</h3>
+                    <p>Dịch vụ Grooming & Spa của PetHaven mang đến trải nghiệm thư giãn và làm đẹp tuyệt vời cho thú cưng của bạn. Đội ngũ nhân viên chuyên nghiệp của chúng tôi sẽ chăm sóc thú cưng từng chi tiết:</p>
+                    <ul>
+                        <li>Tắm và vệ sinh</li>
+                        <li>Cắt tỉa lông theo yêu cầu</li>
+                        <li>Cắt móng và vệ sinh tai, mắt</li>
+                        <li>Massage và đắp mặt nạ dưỡng lông</li>
+                        <li>Nhuộm lông an toàn</li>
+                        <li>Sấy tạo kiểu</li>
+                    </ul>
+                    
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <img src="img/Grooming & Spa.jpg" alt="Grooming & Spa" class="img-fluid rounded shadow">
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <h3>Lưu trú & Khách sạn thú cưng</h3>
+                    <p>Khi bạn đi xa, hãy để chúng tôi chăm sóc thú cưng của bạn tại khách sạn PetHaven. Không gian rộng rãi, thoáng mát và an toàn sẽ là ngôi nhà thứ hai tuyệt vời cho các bé:</p>
+                    <ul>
+                        <li>Phòng riêng biệt, rộng rãi</li>
+                        <li>Chăm sóc 24/7</li>
+                        <li>Khu vui chơi riêng</li>
+                        <li>Dịch vụ đi dạo thường xuyên</li>
+                        <li>Thức ăn chất lượng cao</li>
+                        <li>Giám sát qua camera trực tuyến</li>
+                    </ul>
+                    
+                </div>
+                <div class="col-md-6">
+                    <img src="img/hotel.jpg" alt="Khách sạn thú cưng" class="img-fluid rounded shadow">
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-md-6 order-md-2">
+                    <h3>Huấn luyện thú cưng</h3>
+                    <p>Dịch vụ huấn luyện của PetHaven giúp thú cưng của bạn trở nên ngoan ngoãn và biết nghe lời hơn. Các huấn luyện viên chuyên nghiệp của chúng tôi sẽ giúp bạn:</p>
+                    <ul>
+                        <li>Huấn luyện vâng lời cơ bản</li>
+                        <li>Sửa các thói quen xấu</li>
+                        <li>Huấn luyện đặc biệt theo yêu cầu</li>
+                        <li>Lớp học tương tác chủ - thú cưng</li>
+                        <li>Tư vấn hành vi</li>
+                    </ul>                    
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <img src="img/huanluyen.jpeg" alt="Huấn luyện thú cưng" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES DETAIL -->
+    <section id="health" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Dịch vụ chăm sóc sức khỏe</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4>Khám sức khỏe định kỳ</h4>
+                            <p>Gói khám sức khỏe toàn diện bao gồm kiểm tra tổng quát, kiểm tra nha khoa, kiểm tra tai, mắt và da. Được thực hiện bởi bác sĩ thú y giàu kinh nghiệm.</p>
+                            <p><strong>Giá:</strong> 300.000đ - 500.000đ tùy loại thú cưng</p>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4>Tiêm phòng vắc-xin</h4>
+                            <p>Tiêm phòng các loại vắc-xin thiết yếu cho chó và mèo theo lịch trình khoa học. Bao gồm tư vấn về các loại vắc-xin cần thiết.</p>
+                            <p><strong>Giá:</strong> 200.000đ - 800.000đ tùy loại vắc-xin</p>                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4>Điều trị ký sinh trùng</h4>
+                            <p>Phòng ngừa và điều trị các loại ký sinh trùng bên trong và bên ngoài cho thú cưng. Sử dụng các sản phẩm an toàn và hiệu quả.</p>
+                            <p><strong>Giá:</strong> 250.000đ - 400.000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h4>Chăm sóc nha khoa</h4>
+                            <p>Làm sạch răng, cạo vôi răng và kiểm tra sức khỏe nướu. Phòng ngừa và điều trị các bệnh răng miệng cho thú cưng.</p>
+                            <p><strong>Giá:</strong> 350.000đ - 700.000đ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="grooming" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Dịch vụ Grooming & Spa</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header text-center bg-primary text-white">
+                            <h4>Gói Cơ bản</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Tắm với sữa tắm cao cấp</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Sấy khô</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Cắt móng</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Vệ sinh tai</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Thơm tho 7 ngày</li>
+                            </ul>
+                            <p class="text-center mt-3"><strong>Giá:</strong> 299.000đ - 399.000đ</p>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header text-center bg-success text-white">
+                            <h4>Gói Tiêu chuẩn</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Tất cả dịch vụ gói cơ bản</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Cắt tỉa lông cơ bản</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Vệ sinh mắt</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Sản phẩm dưỡng lông</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Xịt thơm cao cấp</li>
+                            </ul>
+                            <p class="text-center mt-3"><strong>Giá:</strong> 499.000đ - 599.000đ</p>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header text-center bg-danger text-white">
+                            <h4>Gói VIP</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Tất cả dịch vụ gói tiêu chuẩn</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Cắt tỉa lông tạo kiểu</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Massage thư giãn</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Đắp mặt nạ dưỡng lông</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Phụ kiện trang trí</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Sản phẩm quà tặng</li>
+                            </ul>
+                            <p class="text-center mt-3"><strong>Giá:</strong> 799.000đ - 999.000đ</p>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ĐÁNH GIÁ KHÁCH HÀNG -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Khách hàng nói gì về chúng tôi</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="/api/placeholder/100/100" class="rounded-circle mb-3" alt="Khách hàng">
+                            <h5>Nguyễn Thị Hoa</h5>
+                            <p class="text-muted">Chủ của Mèo Bi</p>
+                            <div class="mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p>"Dịch vụ spa tại PetHaven thật tuyệt vời! Bi nhà mình sau khi được chăm sóc trông rất đáng yêu và thơm tho. Nhân viên rất nhiệt tình và chu đáo."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="/api/placeholder/100/100" class="rounded-circle mb-3" alt="Khách hàng">
+                            <h5>Trần Văn Nam</h5>
+                            <p class="text-muted">Chủ của Chó Kiki</p>
+                            <div class="mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                            </div>
+                            <p>"Đưa Kiki đến khám sức khỏe định kỳ tại PetHaven, rất hài lòng với chuyên môn của bác sĩ. Được tư vấn rất chi tiết về chế độ dinh dưỡng cho chó cưng."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="/api/placeholder/100/100" class="rounded-circle mb-3" alt="Khách hàng">
+                            <h5>Lê Minh Tuấn</h5>
+                            <p class="text-muted">Chủ của Chó Bông</p>
+                            <div class="mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p>"Dịch vụ lưu trú tại PetHaven thật tuyệt vời! Bông được chăm sóc rất tốt trong thời gian tôi đi công tác. Giá cả hợp lý và môi trường rất sạch sẽ."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ĐẶT LỊCH -->
+    <section id="booking" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Đặt lịch dịch vụ</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <form id="bookingForm">
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="petOwner" class="form-label">Họ tên chủ thú cưng</label>
+                                        <input type="text" class="form-control" id="petOwner" placeholder="Nhập họ tên" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Số điện thoại</label>
+                                        <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại" required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="petName" class="form-label">Tên thú cưng</label>
+                                        <input type="text" class="form-control" id="petName" placeholder="Nhập tên thú cưng" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="petType" class="form-label">Loại thú cưng</label>
+                                        <select class="form-select" id="petType" required>
+                                            <option value="" selected disabled>Chọn loại thú cưng</option>
+                                            <option value="dog">Chó</option>
+                                            <option value="cat">Mèo</option>
+                                            <option value="rabbit">Thỏ</option>
+                                            <option value="other">Khác</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="service" class="form-label">Dịch vụ</label>
+                                    <select class="form-select" id="service" required>
+                                        <option value="" selected disabled>Chọn dịch vụ</option>
+                                        <option value="health">Chăm sóc sức khỏe</option>
+                                        <option value="grooming-basic">Grooming - Gói cơ bản</option>
+                                        <option value="grooming-standard">Grooming - Gói tiêu chuẩn</option>
+                                        <option value="grooming-vip">Grooming - Gói VIP</option>
+                                        <option value="hotel">Lưu trú</option>
+                                        <option value="training">Huấn luyện</option>
+                                    </select>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="bookingDate" class="form-label">Ngày đặt lịch</label>
+                                        <input type="date" class="form-control" id="bookingDate" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="bookingTime" class="form-label">Giờ đặt lịch</label>
+                                        <input type="time" class="form-control" id="bookingTime" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="notes" class="form-label">Ghi chú</label>
+                                    <textarea class="form-control" id="notes" rows="3" placeholder="Nhập yêu cầu đặc biệt nếu có"></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Đặt lịch ngay</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>PetHaven</h5>
+                    <p>Cửa hàng thú cưng hàng đầu Việt Nam, chuyên cung cấp các sản phẩm và dịch vụ chăm sóc thú cưng chất lượng cao.</p>
+                    <p>© 2024 PetHaven. Đã đăng ký bản quyền.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Liên kết</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Chính sách bảo mật</a></li>
+                        <li><a href="#" class="text-white">Điều khoản sử dụng</a></li>
+                        <li><a href="#" class="text-white">Chính sách giao hàng</a></li>
+                        <li><a href="#" class="text-white">Chính sách đổi trả</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Theo dõi chúng tôi</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                    <div class="mt-3">
+                        <p><i class="fas fa-envelope me-2"></i> info@pethaven.com</p>
+                        <p><i class="fas fa-phone me-2"></i> 0123 456 789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+      <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
